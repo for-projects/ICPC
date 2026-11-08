@@ -3,30 +3,21 @@
 using namespace std;
 
 int main() {
-    int a ,b ;
-    cin >> a >>b;
-    char c;
-    cin>>c;
-    switch (c)
-    {
-    case '+':
-        cout << a+b;
-        break;
-    case '-':
-        cout << a-b;
-        break;
-    case '*':
-        cout << a*b;
-        break;
-    case '/':
-        cout << a/b;
-        break;
 
+    int i = 0;
     
-    default:
-    cout << "You send incorrect data";
-        break;
+    for (;;)
+    {
+        cout << "its working"<< endl;
+        i++;
+
+        if (i > 10)
+        {
+            break;
+        }
+        
     }
     
+
     return 0;
 }
