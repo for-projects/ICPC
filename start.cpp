@@ -2,60 +2,20 @@
 #include <ctime>
 using namespace std;
 
+void print(){
+    cout << "Hello, its  print function"<< endl;
+}
+
+int sum(int a, int b)
+{
+    return a+b;
+}
+
 int main(){
-
-    // массив 10 чисел, рандомный, 0-20, не повторимый, и найти самый маленки в массиве
-
-    srand(time(NULL));
-
-    const int SIZE = 10;
-    int arr[SIZE];
-
-
-    for (int i = 0; i < SIZE; i++)
-    {
-        int a = rand()%21;
-
-        bool add = true;
-
-        for (int j = 0; j < i; j++)
-            {
-                if (arr[j] == a)
-                {
-                    add = false;
-                    break;
-                }
-                
-            }
-        
-        if (add)
-        {   
-            arr[i] = a;
-        }
-        else{
-            i--;
-        }
-    }
-
-    for (int i = 0; i < SIZE; i++)
-    {
-        cout << arr[i]<<" ";
-    }
-    cout << endl;
-
-    int num = arr[0];
-
-    for (int i = 1; i < SIZE; i++)
-    {
-        if (arr[i]< num)
-        {
-            num = arr[i];
-        }
-        
-    }
     
-    cout << "The smallest number in array: "<< num;
+    print();
 
+    cout << sum(3,4);
     
     return 0;
 }
